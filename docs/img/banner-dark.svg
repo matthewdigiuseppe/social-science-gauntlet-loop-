@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 400" width="1200" height="400" font-family="sans-serif"><style>svg{--paper:#121920;--surface:#19222A;--surface-2:#202B34;--ink:#E3EAEF;--muted:#94A4B1;--line:#32404C;--line-strong:#5E7381;--mark:#E58B96;--mark-soft:rgba(229,139,150,.13);--lock:#71B9CB;--lock-soft:rgba(113,185,203,.13);--shadow:0 1px 2px rgba(0,0,0,.4),0 8px 24px -12px rgba(0,0,0,.6);--sans:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;--mono:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;} .bx{fill:var(--surface);stroke:var(--line-strong);stroke-width:1.5} .bx--mark{stroke:var(--mark);fill:var(--mark-soft)} .bx--lock{stroke:var(--lock);fill:var(--lock-soft)} .bx--quiet{fill:none;stroke:var(--line);stroke-width:1.25} .bx--dash{fill:none;stroke:var(--line);stroke-width:1.25;stroke-dasharray:5 5} .bx--on{fill:var(--surface-2);stroke:var(--ink);stroke-width:1.5} .t{font-family:var(--sans);font-size:13px;font-weight:600;fill:var(--ink)} .t--sm{font-size:12px} .s{font-family:var(--sans);font-size:10.5px;font-weight:400;fill:var(--muted)} .s--mark{fill:var(--mark);font-weight:600} .lab{font-family:var(--mono);font-size:10px;font-weight:500;letter-spacing:.11em;fill:var(--muted)} .lab--ink{fill:var(--ink)} .lab--lock{fill:var(--lock)} .ed{fill:none;stroke:var(--line-strong);stroke-width:1.5;marker-end:url(#ah)} .ed--mark{stroke:var(--mark);marker-end:url(#ahm)} .ed--plain{fill:none;stroke:var(--line-strong);stroke-width:1.5} .ed--forbid{fill:none;stroke:var(--mark);stroke-width:1.5;stroke-dasharray:6 5;marker-end:url(#ahm)} .ah{fill:var(--line-strong)} .ahm{fill:var(--mark)} .zone{fill:var(--ink);opacity:.045} .gate{stroke:var(--lock);stroke-width:2;stroke-dasharray:7 6} .xm{stroke:var(--mark);stroke-width:3;stroke-linecap:round} .plot{stroke:var(--ink);stroke-width:2;fill:none} .plot--drift{stroke:var(--mark);stroke-width:2;fill:none;stroke-dasharray:7 5} .plot--bar{stroke:var(--lock);stroke-width:2;fill:none;stroke-dasharray:7 5} .axis{stroke:var(--line);stroke-width:1.25} .dot{fill:var(--lock)} .be{font-family:var(--mono);font-size:12px;font-weight:500;letter-spacing:.18em;fill:var(--muted)}.bt{font-family:Newsreader,Georgia,"Times New Roman",serif;font-size:46px;font-weight:600;fill:var(--ink);letter-spacing:-.5px}.bs{font-family:var(--sans);font-size:14px;fill:var(--muted)}.bn{font-family:var(--sans);font-size:12.5px;font-weight:600;fill:var(--ink)}.bq{font-family:var(--sans);font-size:10px;fill:var(--muted)}</style><defs><marker id="ah" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" class="ah"/></marker><marker id="ahm" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" class="ahm"/></marker></defs><rect width="1200" height="400" fill="var(--paper)"/>
+<text class="be" x="70" y="128">BEFORE YOU SUBMIT</text>
+<text class="bt" x="70" y="190">Social Science</text>
+<text class="bt" x="70" y="240">Gauntlet</text>
+<line x1="70" y1="270" x2="250" y2="270" class="axis"/>
+<text class="bs" x="70" y="300">Hear what your referees will say, first.</text>
+
+<rect class="bx" x="560" y="95" width="170" height="62" rx="5"/>
+<text class="bn" x="645" y="121" text-anchor="middle">YOUR DRAFT</text>
+<text class="bq" x="645" y="140" text-anchor="middle">the one you are about to send</text>
+
+<rect class="bx bx--lock" x="560" y="243" width="170" height="62" rx="5"/>
+<text class="bn" x="645" y="269" text-anchor="middle">THE BAR</text>
+<text class="bq" x="645" y="288" text-anchor="middle">a paper that already got in</text>
+
+<rect class="bx" x="790" y="170" width="150" height="60" rx="5"/>
+<text class="bn" x="865" y="195" text-anchor="middle">NAMES OFF</text>
+<text class="bq" x="865" y="214" text-anchor="middle">both papers</text>
+
+<rect class="bx bx--mark" x="1000" y="170" width="150" height="60" rx="5"/>
+<text class="bn" x="1075" y="195" text-anchor="middle">TWO REFEREES</text>
+<text class="bq" x="1075" y="214" text-anchor="middle">each has to pick one</text>
+<text class="bq" x="1075" y="252" text-anchor="middle">two companies, both orderings</text>
+
+<line class="ed" x1="732" y1="140" x2="786" y2="180"/>
+<line class="ed" x1="732" y1="260" x2="786" y2="220"/>
+<line class="ed" x1="942" y1="200" x2="996" y2="200"/>
+<path class="ed ed--mark" d="M1075 170 L1075 72 Q1075 60 1063 60 L657 60 Q645 60 645 72 L645 91"/>
+<text class="bq" x="860" y="49" text-anchor="middle" fill="var(--mark)" font-weight="600">the one objection that would block it</text>
+</svg>

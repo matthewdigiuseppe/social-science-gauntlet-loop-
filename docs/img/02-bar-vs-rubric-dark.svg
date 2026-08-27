@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 380" width="1000" height="380" font-family="sans-serif"><style>svg{--paper:#121920;--surface:#19222A;--surface-2:#202B34;--ink:#E3EAEF;--muted:#94A4B1;--line:#32404C;--line-strong:#5E7381;--mark:#E58B96;--mark-soft:rgba(229,139,150,.13);--lock:#71B9CB;--lock-soft:rgba(113,185,203,.13);--shadow:0 1px 2px rgba(0,0,0,.4),0 8px 24px -12px rgba(0,0,0,.6);--sans:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;--mono:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;} .bx{fill:var(--surface);stroke:var(--line-strong);stroke-width:1.5} .bx--mark{stroke:var(--mark);fill:var(--mark-soft)} .bx--lock{stroke:var(--lock);fill:var(--lock-soft)} .bx--quiet{fill:none;stroke:var(--line);stroke-width:1.25} .bx--dash{fill:none;stroke:var(--line);stroke-width:1.25;stroke-dasharray:5 5} .bx--on{fill:var(--surface-2);stroke:var(--ink);stroke-width:1.5} .t{font-family:var(--sans);font-size:13px;font-weight:600;fill:var(--ink)} .t--sm{font-size:12px} .s{font-family:var(--sans);font-size:10.5px;font-weight:400;fill:var(--muted)} .s--mark{fill:var(--mark);font-weight:600} .lab{font-family:var(--mono);font-size:10px;font-weight:500;letter-spacing:.11em;fill:var(--muted)} .lab--ink{fill:var(--ink)} .lab--lock{fill:var(--lock)} .ed{fill:none;stroke:var(--line-strong);stroke-width:1.5;marker-end:url(#ah)} .ed--mark{stroke:var(--mark);marker-end:url(#ahm)} .ed--plain{fill:none;stroke:var(--line-strong);stroke-width:1.5} .ed--forbid{fill:none;stroke:var(--mark);stroke-width:1.5;stroke-dasharray:6 5;marker-end:url(#ahm)} .ah{fill:var(--line-strong)} .ahm{fill:var(--mark)} .zone{fill:var(--ink);opacity:.045} .gate{stroke:var(--lock);stroke-width:2;stroke-dasharray:7 6} .xm{stroke:var(--mark);stroke-width:3;stroke-linecap:round} .plot{stroke:var(--ink);stroke-width:2;fill:none} .plot--drift{stroke:var(--mark);stroke-width:2;fill:none;stroke-dasharray:7 5} .plot--bar{stroke:var(--lock);stroke-width:2;fill:none;stroke-dasharray:7 5} .axis{stroke:var(--line);stroke-width:1.25} .dot{fill:var(--lock)} </style><defs><marker id="ah" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" class="ah"/></marker><marker id="ahm" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" class="ahm"/></marker></defs><rect width="1000" height="380" fill="var(--paper)"/>
+
+          <text class="lab lab--ink" x="40" y="26">IF YOU JUST ASK A MODEL</text>
+          <line class="axis" x1="70" y1="70" x2="70" y2="320"></line>
+          <line class="axis" x1="70" y1="320" x2="450" y2="320"></line>
+          <text class="s" x="70" y="344">round 1</text>
+          <text class="s" x="450" y="344" text-anchor="end">round n</text>
+          <text class="s" x="52" y="195" text-anchor="middle" transform="rotate(-90 52 195)">quality</text>
+          <polyline class="plot--drift" points="90,274 160,256 230,232 300,199 370,170 440,144"></polyline>
+          <polyline class="plot" points="90,300 160,282 230,258 300,225 370,196 440,170"></polyline>
+          <text class="s s--mark" x="440" y="132" text-anchor="end">the model's standard</text>
+          <text class="s" x="440" y="204" text-anchor="end">your draft</text>
+
+          <text class="lab lab--ink" x="530" y="26">IF YOU RACE A PUBLISHED PAPER</text>
+          <line class="axis" x1="560" y1="70" x2="560" y2="320"></line>
+          <line class="axis" x1="560" y1="320" x2="940" y2="320"></line>
+          <text class="s" x="560" y="344">round 1</text>
+          <text class="s" x="940" y="344" text-anchor="end">round n</text>
+          <text class="s" x="542" y="195" text-anchor="middle" transform="rotate(-90 542 195)">quality</text>
+          <line class="plot--bar" x1="580" y1="180" x2="930" y2="180"></line>
+          <text class="s lab--lock" x="580" y="168">the bar (it does not move)</text>
+          <polyline class="plot" points="580,306 650,288 720,255 790,205 860,164 930,132"></polyline>
+          <text class="s" x="930" y="124" text-anchor="end">your draft</text>
+          <circle class="dot" cx="833" cy="180" r="5"></circle>
+          <line class="ed--plain" x1="833" y1="188" x2="833" y2="238"></line>
+          <text class="s" x="833" y="256" text-anchor="middle">the panel picks yours</text>
+        </svg>
