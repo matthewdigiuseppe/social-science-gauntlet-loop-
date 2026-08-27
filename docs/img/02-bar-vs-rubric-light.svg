@@ -18,10 +18,10 @@
           <text class="s" x="940" y="344" text-anchor="end">round n</text>
           <text class="s" x="542" y="195" text-anchor="middle" transform="rotate(-90 542 195)">quality</text>
           <line class="plot--bar" x1="580" y1="180" x2="930" y2="180"></line>
-          <text class="s lab--lock" x="580" y="168">the bar — does not move</text>
+          <text class="s lab--lock" x="580" y="168">the bar (it does not move)</text>
           <polyline class="plot" points="580,306 650,288 720,255 790,205 860,164 930,132"></polyline>
           <text class="s" x="930" y="124" text-anchor="end">your draft</text>
           <circle class="dot" cx="833" cy="180" r="5"></circle>
           <line class="ed--plain" x1="833" y1="188" x2="833" y2="238"></line>
-          <text class="s" x="833" y="256" text-anchor="middle">the panel picks yours — exit</text>
+          <text class="s" x="833" y="256" text-anchor="middle">the panel picks yours</text>
         </svg>

@@ -217,21 +217,38 @@
 <div class="wrap">
 
   <header class="col">
-    <p class="eyebrow">A gauntlet loop for empirical papers</p>
+    <p class="eyebrow">Before you submit</p>
     <h1>Social Science Gauntlet</h1>
-    <p class="lede">You have a finished manuscript and you want to know whether it clears the bar at a top-5 journal — before you send it, not four months later in a rejection letter. This is what the skill actually does, how it stops itself from cheating, and how it keeps you accountable for a paper it revised while you weren't watching.</p>
+    <p class="lede">You send a paper to APSR. Four months later three reports come back, and two of them raise something you could have fixed in an afternoon if anyone had told you. This is a way to hear those objections first.</p>
   </header>
 
-  <p class="quote">It races your draft against a paper that actually got into the journal you're targeting, blind, judged by AI referees from two different companies — and keeps revising until it wins, or until the referees stop finding new problems.</p>
+  <p class="quote">An AI reads your paper the way a referee would, over and over, and compares it against a paper that already got into the journal you are aiming at. It keeps revising until it picks yours, or until it runs out of new complaints.</p>
+
+  <div class="col">
+    <p>What you get back is a revised draft, a list of every change that touched a claim, and a list of the objections it could not answer. That last list is what your actual referees are going to say.</p>
+  </div>
 
   <hr class="rule">
 
   <section>
     <div class="sec-head">
-      <h2>The shape of the thing</h2>
-      <p>Four setup steps that happen once, then a cycle that runs separately on each of seven tracks. The tracks are the objections that actually kill papers — not the sections a paper is organised into. Nobody rejects a manuscript for having a weak Section&nbsp;3.</p>
+      <h2>Is this cheating?</h2>
+      <p>Everybody asks this first, so here is the straight answer.</p>
+      <p><strong>The loop cannot touch your results.</strong> Before it starts you write your headline specification into a file it is forbidden to edit: estimator, sample, dependent variable, treatment, fixed effects, clustering. That stays frozen for the whole run. The loop revises how the paper argues, explains and presents. It does not go looking for a better result.</p>
+      <p>It <em>can</em> run robustness checks, and that is where the real danger sits. If a referee says the effect is not robust, the easy way to make the complaint go away is to hunt for a specification where it holds. So every check gets written down before it runs, including what result would count as failing, and every check that gets written down appears in the paper whether it passed or not. Nothing is quietly dropped. A separate auditor reads that log and asks one question: does this look like someone trying to break their result, or someone shopping for one that survives?</p>
+      <p>My honest view is that this is more disciplined than how most of us work by hand. You run a check in Stata at eleven at night, it comes out badly, you try a different one, and nothing anywhere records that. Here it does.</p>
+      <p>You should still disclose it. Most journals now have a policy on AI assistance. Follow it, and say plainly that the analyses and the reported specification were fixed in advance and are unchanged.</p>
     </div>
+  </section>
 
+  <hr class="rule">
+
+  <section>
+    <div class="sec-head">
+      <h2>Why not just ask ChatGPT if it is any good</h2>
+      <p>Because it will say yes. Hand a good model your draft and ask whether it is ready for AJPS, and it will tell you the paper is strong, give you a page of feedback, and mean every word of it. Revise, ask again, and now the draft is stronger. The standard climbs with you. Nothing can ever fail, and a test nothing can fail teaches you nothing.</p>
+      <p>Put a published paper on the other side of the comparison and the standard stops moving.</p>
+    </div>
     <figure>
       <div class="scroller">
         <svg viewBox="0 0 1120 530" role="img" aria-label="Process diagram. Four setup steps run once: pick the bar, freeze the analysis and the claims, open the ledger and the changelog, check the code runs. The manuscript is then split into seven objection tracks, and each track runs a cycle: a builder revises the track, labels are stripped from both it and the bar paper, a referee panel of two models at two orderings picks one, and the objection goes back to the builder until the track exits.">
@@ -325,7 +342,7 @@
           <text class="s" x="1020" y="371" text-anchor="middle">by track</text>
         </svg>
       </div>
-      <figcaption><b>One cycle, seven times over.</b> The builder never judges its own work — the panel is a separate set of models with no memory of previous rounds and no idea how hard the builder tried. A win means all four comparisons: two models, each shown the pair in both orders, because AI judges reliably favour whichever manuscript they see first. Three out of four is position bias, not a win.</figcaption>
+      <figcaption>Ask a coach whether you are fast and you get an opinion. Race someone who made the Olympic team and you get a time.</figcaption>
     </figure>
   </section>
 
@@ -333,10 +350,10 @@
 
   <section>
     <div class="sec-head">
-      <h2>Why a published paper, and not a rubric</h2>
-      <p>The obvious version of this is to hand your draft to a smart model and ask whether it's good enough for AJPS. That fails, and it's worth being precise about why: the model grades you against a standard it invented on the spot, and it wants to be helpful. Revise, ask again, and it says the draft is stronger now. The standard climbs with you.</p>
+      <h2>What actually happens</h2>
+      <p>Your paper gets split seven ways, and each piece is worked on separately until it is finished.</p>
+      <p>The seven pieces are the objections that kill papers. I have written enough referee reports to know that nothing dies of a weak Section 3. Papers die because the identification strategy will not carry the causal claim, or because the referee already knew the finding from something you cite. So the split follows those lines instead of the section headings.</p>
     </div>
-
     <figure>
       <div class="scroller">
         <svg viewBox="0 0 1000 380" role="img" aria-label="Two line charts. On the left, asking a model if the draft is good: the draft quality rises over rounds and the model's standard rises alongside it, staying just above, so the two lines never cross. On the right, racing a published paper: the bar is a flat horizontal line that does not move, and the rising draft line eventually crosses it, which is the exit.">
@@ -359,26 +376,28 @@
           <text class="s" x="940" y="344" text-anchor="end">round n</text>
           <text class="s" x="542" y="195" text-anchor="middle" transform="rotate(-90 542 195)">quality</text>
           <line class="plot--bar" x1="580" y1="180" x2="930" y2="180"></line>
-          <text class="s lab--lock" x="580" y="168">the bar — does not move</text>
+          <text class="s lab--lock" x="580" y="168">the bar (it does not move)</text>
           <polyline class="plot" points="580,306 650,288 720,255 790,205 860,164 930,132"></polyline>
           <text class="s" x="930" y="124" text-anchor="end">your draft</text>
           <circle class="dot" cx="833" cy="180" r="5"></circle>
           <line class="ed--plain" x1="833" y1="188" x2="833" y2="238"></line>
-          <text class="s" x="833" y="256" text-anchor="middle">the panel picks yours — exit</text>
+          <text class="s" x="833" y="256" text-anchor="middle">the panel picks yours</text>
         </svg>
       </div>
-      <figcaption><b>A rubric moves; a published paper doesn't.</b> On the left there is no round at which the draft can fail, which means there is no round at which you learn anything. On the right the comparison is fixed before the first round and the draft either crosses it or doesn't. It's the difference between asking a coach whether you're fast and racing someone who made the Olympic team.</figcaption>
+      <figcaption>Two AI referees see your piece and the published paper side by side with the names stripped off, and each has to pick one. Every comparison runs four times, both referees at both orderings, because whoever is shown first tends to win. All four, or it does not count. The AI doing the revising never gets to judge its own work.</figcaption>
     </figure>
+    <div class="col">
+      <p><strong>It knows the objections you would raise yourself.</strong> The methodological referee works from a checklist of what actually gets said about observational IR and IPE papers at this tier: two-way fixed effects under staggered or time-varying treatment, exclusion restrictions asserted rather than argued, interactions estimated off a handful of observations at one end of the moderator (Hainmueller, Mummolo and Xu 2019), confounding on the moderator and not just on the treatment (Blackwell and Olson 2022), non-proportional hazards (Licht 2011), within-country variation too thin to carry country fixed effects, and what happens to power as each new moderator goes in.</p>
+    </div>
   </section>
 
   <hr class="rule">
 
   <section>
     <div class="sec-head">
-      <h2>The part that stops it cheating</h2>
-      <p>Here is the danger, stated plainly. If you tell an AI to keep working until the referee stops complaining, and the referee complains that your result isn't robust, the cheapest way to make that complaint disappear is to find a version of the analysis where the result holds. That is p-hacking, automated and tireless. So the loop is allowed to run robustness checks, but only through a gate.</p>
+      <h2>How the robustness checks stay honest</h2>
+      <p>This is the machinery behind the answer above. Every check is declared before it runs, with its failure line written in advance, and both outcomes lead to the same place.</p>
     </div>
-
     <figure>
       <div class="scroller">
         <svg viewBox="0 0 1080 480" role="img" aria-label="The robustness ledger. A referee objection leads to a ledger entry stating what the check is, which objection it answers, the exact specification, and what result would count as failing. That entry is committed before any code runs, marked by a vertical commit line. Only then is the check run. Whether it passes or fails, both paths converge on the same outcome: reported in the paper. A dashed path from the failure back to trying another variant is crossed out, because it would have to cross the commit line backwards. A spec-search auditor reads only the ledger, never the paper.">
@@ -436,39 +455,35 @@
           <path class="ed" d="M340 420 C400 408, 384 322, 352 288"></path>
         </svg>
       </div>
-      <figcaption><b>The idea underneath it:</b> a robustness check is only evidence if it could have come out badly and you'd have reported it anyway. Writing the failure line in advance is what makes that true rather than merely claimed. Both branches end at the same box — pass and fail are reported identically — and a separate auditor reads only the log, including every entry that failed, and answers one question: does this look like someone honestly trying to break their result, or someone shopping for one that survives?</figcaption>
+      <figcaption><b>A robustness check is evidence only if it could have come out badly and you would have reported it anyway.</b> Writing the failure line in advance is what makes that true rather than merely claimed. Pass and fail land in the same box. The auditor reads the log and never the paper, including every entry that failed.</figcaption>
     </figure>
-
-    <div class="col">
-      <p>Worth saying out loud when you explain this: it is arguably <em>more</em> honest than how most of us work by hand. Nobody keeps a record of the checks that never made it into the appendix.</p>
-    </div>
   </section>
 
   <hr class="rule">
 
   <section>
     <div class="sec-head">
-      <h2>It never stops to ask you</h2>
-      <p>That's deliberate. A run that halts every time it touches a claim is a run nobody finishes, and an author asked forty times will approve forty times without reading. But it has a real cost — decisions that are properly yours get made while you aren't watching. So the loop pays that cost three ways instead of pretending it isn't there.</p>
-      <p>First, a separate classifier triages every change it accepts into one that alters what the paper <em>claims</em>, one that's substantive but doesn't, and one that's routine. Not the builder — the builder has an interest in calling its own work minor. Then three standing rules make the loop's unsupervised choices safe by construction.</p>
+      <h2>It never interrupts you</h2>
+      <p>A run that stops to ask permission every time it touches a sentence is a run nobody finishes. Ask an author forty times and you get forty approvals and no reading. So it does not ask. It keeps a record instead, and it follows three rules that make the decisions it takes on your behalf safe ones.</p>
     </div>
     <div class="cards">
       <div class="card">
-        <h3>Never strengthen a claim</h3>
-        <p>Where a change would alter what the paper asserts, it takes the weaker, more hedged, more narrowly scoped form. “Is consistent with” never becomes “shows”. This settles failed robustness checks too: a check that fails narrows the claim to where it holds. Bounding down needs no permission — bounding up would.</p>
+        <h3>It can weaken a claim, never strengthen one</h3>
+        <p>Where a revision would change what the paper asserts, it takes the more cautious version. &ldquo;Is consistent with&rdquo; never becomes &ldquo;shows&rdquo;. A failed robustness check narrows your claim to where it holds rather than disappearing. Walking a claim back needs no permission from you. Pushing one further would.</p>
       </div>
       <div class="card">
-        <h3>Never delete your words silently</h3>
-        <p>Any sentence you wrote that the loop cuts or rewrites is preserved verbatim in the changelog, in full. You can restore any of it from the record without going back through the version history to find it.</p>
+        <h3>Your sentences are never deleted silently</h3>
+        <p>Anything of yours it cuts or rewrites is kept word for word in the log. You can put any of it back without hunting through version history.</p>
       </div>
       <div class="card">
-        <h3>Never add a citation you haven't read</h3>
-        <p>Every reference the loop introduces is written into the draft with an inline <code>[UNVERIFIED]</code> marker and stays that way until you confirm you've read the work. You're accountable for every reference in the paper, and a log entry you might not open is not enough protection.</p>
+        <h3>New citations are flagged until you read them</h3>
+        <p>Every reference it adds is marked <code>[UNVERIFIED]</code> in the draft and stays that way until you confirm you have read the work. You are accountable for every reference in your paper. This is the most likely way the whole approach embarrasses somebody.</p>
       </div>
     </div>
     <div class="col">
-      <p><strong>Markers are the one thing that blocks, and they block only at the end.</strong> Every claim-level change leaves a marker at the exact spot in the manuscript, and the paper isn't submittable while any marker remains. Clearing them is your obligatory work, and it's proportional to how much the loop actually changed.</p>
-      <p>The run finishes with a handoff brief rather than a verdict: the claims diff first — the paper's assertions as they now stand, against the ones you wrote down before round one — then the claim-level changes ordered by how far they moved the paper, the open markers, every robustness check that failed and how it narrowed things, and the objections that were still live when each track ran dry. Those last ones are what a real referee will raise. Ordered by risk, not by date.</p>
+      <p>Anywhere it changes what the paper claims, it leaves a flag at that spot in the document. <strong>The paper is not submittable while any flag is still there.</strong> Clearing them is the work you have to do, and it is proportional to how much actually changed.</p>
+      <p>At the end you get a handoff brief. What the paper claims now, against what you wrote down at the start. Then the changes that moved it furthest, the open flags, every robustness check that failed and how it narrowed things, and whatever the referees were still objecting to when they ran dry.</p>
+      <p>That last list is the one to read twice.</p>
     </div>
   </section>
 
@@ -476,35 +491,18 @@
 
   <section>
     <div class="sec-head">
-      <h2>When it stops</h2>
-      <p>Three different finish lines, because pretending there's one would be a lie.</p>
+      <h2>What you actually do</h2>
+      <p>Five steps. Most of your time goes into step two, and it takes about twenty minutes.</p>
     </div>
     <div class="tbl-wrap">
       <table class="tbl">
-        <thead>
-          <tr><th scope="col">Track</th><th scope="col">How it ends</th></tr>
-        </thead>
+        <thead><tr><th scope="col">Step</th><th scope="col">What it involves</th></tr></thead>
         <tbody>
-          <tr>
-            <td>Writing, tables, figures</td>
-            <td>It ends when your version beats the published paper, four comparisons out of four. This is genuinely winnable — you can out-present a paper that's already in print.</td>
-          </tr>
-          <tr>
-            <td>Contribution</td>
-            <td>It will never beat a published paper's contribution; that took someone three years. So it ends when two consecutive rounds pass without a <em>new</em> objection. Repeated objections don't reset the count.</td>
-          </tr>
-          <tr>
-            <td>Identification, measurement</td>
-            <td>Same running-dry rule, with a floor: an objection your design genuinely cannot answer goes into the limitations section, not into another round. Loop on what's fixable. Disclose what isn't.</td>
-          </tr>
-          <tr>
-            <td>Every track</td>
-            <td>Nothing ends while the replication code fails to run, a number in a table doesn't match what the code produced, or a check that was declared in the ledger is missing from the manuscript.</td>
-          </tr>
-          <tr>
-            <td>And then you</td>
-            <td>“Every track has hit its exit” means there is nothing left for the loop to do. It does not mean the paper is ready. Submission is an authorial act — you clear the handoff brief and the markers. The loop reaches <em>done</em>. Only you reach <em>ready</em>.</td>
-          </tr>
+          <tr><td>1 · Get your files together</td><td>The manuscript and the replication code in one folder. The code has to run from the raw data, because the loop checks that before it starts and every number in every table gets traced back to output.</td></tr>
+          <tr><td>2 · Write two short files</td><td>Your headline specification, and what your paper claims, in your own words. The second one matters more than it sounds: it is the reference that catches the draft drifting away from what you meant. If the AI writes it for you, it drifts along with the draft and catches nothing.</td></tr>
+          <tr><td>3 · Pick the bar</td><td>You get two or three suggested papers from your target journal. Pick the one you would least like to be compared against.</td></tr>
+          <tr><td>4 · Start it and leave</td><td>It does not need you. It will not ask.</td></tr>
+          <tr><td>5 · Read the handoff brief</td><td>Clear the flags, decide what to keep, decide what to revert.</td></tr>
         </tbody>
       </table>
     </div>
@@ -514,31 +512,53 @@
 
   <section>
     <div class="sec-head">
-      <h2>Say the limits out loud</h2>
-      <p>These three are the difference between a tool and a toy, so lead with them when someone is sceptical.</p>
+      <h2>When it stops</h2>
+      <p>Different pieces finish differently, and pretending otherwise would be a lie.</p>
+    </div>
+    <div class="tbl-wrap">
+      <table class="tbl">
+        <thead><tr><th scope="col">Piece</th><th scope="col">How it finishes</th></tr></thead>
+        <tbody>
+          <tr><td>Writing, tables, figures</td><td>When your version beats the published paper four times out of four. This one is genuinely winnable. You can out-present a paper that is already in print.</td></tr>
+          <tr><td>Contribution</td><td>It will never beat a published paper's contribution, which took somebody three years. It finishes when two rounds go by without a <em>new</em> objection.</td></tr>
+          <tr><td>Identification, measurement</td><td>Same rule, with a floor. An objection your design genuinely cannot answer belongs in your limitations section rather than in another round of revision.</td></tr>
+          <tr><td>All of them</td><td>Nothing finishes while your code fails to run, a table disagrees with the code, or a declared robustness check is missing from the paper.</td></tr>
+          <tr><td>And then you</td><td>&ldquo;Everything has finished&rdquo; means the loop has nothing left to do. The loop reaches <em>done</em>. Only you reach <em>ready</em>.</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <hr class="rule">
+
+  <section>
+    <div class="sec-head">
+      <h2>Where I think this breaks</h2>
+      <p>Two of these worry me. The third is a caution.</p>
     </div>
     <div class="cards">
       <div class="card">
         <h3>The comparison paper may already be memorised</h3>
-        <p>If the AI recognises the published paper, it isn't comparing two manuscripts — it's remembering which one is famous. Use papers published after the models' training cutoff, and probe each referee once per run to check it doesn't recognise either one.</p>
+        <p>Published papers are in the training data. A model that recognises the APSR piece is remembering which one is famous rather than judging two manuscripts, and every win after that is noise. Use papers published recently enough that the models have not seen them, and ask each referee once per run whether it can name either paper.</p>
       </div>
       <div class="card">
         <h3>Two referees from one company are one referee</h3>
-        <p>Models from the same family share training data and taste, so their agreement carries far less information than it looks like. That's why the panel is deliberately cross-vendor rather than two of the same model.</p>
+        <p>Models from the same company share training data and taste, so they agree with each other for reasons that have nothing to do with your paper. Use two companies.</p>
       </div>
       <div class="card">
-        <h3>Running dry is not the same as passing</h3>
-        <p>Two rounds without a new objection means the machine is out of ideas. It does not mean you have a top-5 paper. Read the accumulated objections yourself before you decide anything.</p>
+        <h3>Running out of objections is not the same as passing</h3>
+        <p>Two quiet rounds tell you the machine is out of ideas. Read the accumulated objections yourself before you decide anything.</p>
       </div>
     </div>
     <div class="col">
-      <p><strong>And what it isn't.</strong> It doesn't predict whether you'll get in. It doesn't replace a human referee. It cannot make a boring finding interesting. What it does is burn through the obvious objections before a real referee reaches them, with machinery that makes it hard to fool yourself along the way.</p>
+      <p>It will not tell you whether you will get in, it does not replace a referee, and it cannot make a boring finding interesting. It also cannot fix a design problem. If your identification does not work, it will tell you so clearly, repeatedly and correctly, and there is nothing it can do about it from the draft.</p>
+      <p>What it does is get the obvious objections out of the way before a referee reaches them.</p>
     </div>
   </section>
 
   <footer>
     <p>The gauntlet loop technique is <a href="https://github.com/mshumer">Matt Shumer's</a>, from the original prompt he wrote for <a href="https://github.com/mshumer/Claude-of-Duty">Claude of Duty</a>. This adapts <a href="https://github.com/robonuggets/gauntlet-loop">gauntlet-loop</a> by Jay E at RoboNuggets, which packaged that technique as a reusable skill.</p>
-    <p>Modified for empirical social science: reviewer models moved from bar to critic, decomposition by referee objection, the frozen result and the robustness ledger, split exit conditions, and a blinding protocol for training-data contamination. CC BY 4.0.</p>
+    <p>Modified for empirical social science: reviewer models moved from bar to critic, splitting by referee objection, the frozen specification and the robustness log, change tracking that never interrupts, and a blinding protocol for the training-data problem. CC BY 4.0.</p>
   </footer>
 
 </div>
