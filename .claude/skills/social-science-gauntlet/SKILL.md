@@ -110,6 +110,16 @@ This is the part that makes the adaptation dangerous and the part the ledger exi
 
 If the ledger and the appendix ever disagree, the ledger is right and the paper is wrong.
 
+## The dashboard
+
+The run publishes one page and keeps republishing it to the same URL. Full spec in `references/progress-dashboard.md`. Two things about it are not negotiable.
+
+**Every panel is generated from a file on disk** (`CLAIMS.md`, the ledger, the changelog, track state), never from the loop's own account of how the run is going. A dashboard the loop writes about itself is a status report from the party with an interest in the answer.
+
+**Running dry never renders as winning.** They are different exits and they mean different things, so they get different words and different colours, with the round count beside each. The panel that matters most is the claims diff, which goes first; the panel most easily scrolled past is the list of objections nobody could answer, which is what a real referee will raise, so it gets a heading that stops the author.
+
+No percentages anywhere. There is no denominator.
+
 ## Exit conditions
 
 Different pieces exit differently, and pretending otherwise is how the loop lies to you.
@@ -143,7 +153,7 @@ The referees should be harsh. Praise is not useful. Two models, both orderings, 
 
 /loop on each piece until it hits its exit condition in the skill. Do not stop before that.
 
-Keep a live progress page updating as the work evolves so I can watch it.
+Publish a live dashboard as an artifact and republish it to the same URL after every round, following references/progress-dashboard.md. Generate every panel from the files on disk rather than from your own summary of how the run is going.
 
 Fan out subagents and ultracode.
 ```

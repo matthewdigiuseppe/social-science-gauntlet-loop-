@@ -144,7 +144,8 @@ Then, in your manuscript's folder:
 └── references/
     ├── referee-panel.md          # blinding, the two-company panel, order swaps, referee prompts, objection checklist
     ├── robustness-ledger.md      # the log, its rules, worked examples of a check that passes and one that fails
-    └── change-tracking.md        # what counts as consequential, the three rules, flags, the handoff brief
+    ├── change-tracking.md        # what counts as consequential, the three rules, flags, the handoff brief
+    └── progress-dashboard.md     # the live page: which panels, where each one's numbers come from
 docs/                             # the illustrated version, served by GitHub Pages
 ```
 
