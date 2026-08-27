@@ -50,5 +50,5 @@
           <rect class="bx" x="60" y="400" width="280" height="58" rx="5"></rect>
           <text class="t t--sm" x="200" y="424" text-anchor="middle">THE SPEC-SEARCH AUDITOR</text>
           <text class="s" x="200" y="442" text-anchor="middle">reads the ledger, never the paper</text>
-          <path class="ed" d="M210 400 C210 340, 340 320, 348 284"></path>
+          <path class="ed" d="M340 420 C400 408, 384 322, 352 288"></path>
         </svg>

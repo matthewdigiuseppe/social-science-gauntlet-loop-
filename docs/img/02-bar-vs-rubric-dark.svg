@@ -9,7 +9,7 @@
           <polyline class="plot--drift" points="90,274 160,256 230,232 300,199 370,170 440,144"></polyline>
           <polyline class="plot" points="90,300 160,282 230,258 300,225 370,196 440,170"></polyline>
           <text class="s s--mark" x="440" y="132" text-anchor="end">the model's standard</text>
-          <text class="s" x="440" y="188" text-anchor="end">your draft</text>
+          <text class="s" x="440" y="204" text-anchor="end">your draft</text>
 
           <text class="lab lab--ink" x="530" y="26">IF YOU RACE A PUBLISHED PAPER</text>
           <line class="axis" x1="560" y1="70" x2="560" y2="320"></line>
@@ -18,7 +18,7 @@
           <text class="s" x="940" y="344" text-anchor="end">round n</text>
           <text class="s" x="542" y="195" text-anchor="middle" transform="rotate(-90 542 195)">quality</text>
           <line class="plot--bar" x1="580" y1="180" x2="930" y2="180"></line>
-          <text class="s lab--lock" x="930" y="170" text-anchor="end">the bar — does not move</text>
+          <text class="s lab--lock" x="580" y="168">the bar — does not move</text>
           <polyline class="plot" points="580,306 650,288 720,255 790,205 860,164 930,132"></polyline>
           <text class="s" x="930" y="124" text-anchor="end">your draft</text>
           <circle class="dot" cx="833" cy="180" r="5"></circle>
