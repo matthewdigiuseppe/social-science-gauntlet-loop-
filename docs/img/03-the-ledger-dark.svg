@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 480" width="1080" height="480" font-family="sans-serif"><style>svg{--paper:#121920;--surface:#19222A;--surface-2:#202B34;--ink:#E3EAEF;--muted:#94A4B1;--line:#32404C;--line-strong:#5E7381;--mark:#E58B96;--mark-soft:rgba(229,139,150,.13);--lock:#71B9CB;--lock-soft:rgba(113,185,203,.13);--shadow:0 1px 2px rgba(0,0,0,.4),0 8px 24px -12px rgba(0,0,0,.6);--sans:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;--mono:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;} .bx{fill:var(--surface);stroke:var(--line-strong);stroke-width:1.5} .bx--mark{stroke:var(--mark);fill:var(--mark-soft)} .bx--lock{stroke:var(--lock);fill:var(--lock-soft)} .bx--quiet{fill:none;stroke:var(--line);stroke-width:1.25} .bx--dash{fill:none;stroke:var(--line);stroke-width:1.25;stroke-dasharray:5 5} .bx--on{fill:var(--surface-2);stroke:var(--ink);stroke-width:1.5} .t{font-family:var(--sans);font-size:13px;font-weight:600;fill:var(--ink)} .t--sm{font-size:12px} .s{font-family:var(--sans);font-size:10.5px;font-weight:400;fill:var(--muted)} .s--mark{fill:var(--mark);font-weight:600} .lab{font-family:var(--mono);font-size:10px;font-weight:500;letter-spacing:.11em;fill:var(--muted)} .lab--ink{fill:var(--ink)} .lab--lock{fill:var(--lock)} .ed{fill:none;stroke:var(--line-strong);stroke-width:1.5;marker-end:url(#ah)} .ed--mark{stroke:var(--mark);marker-end:url(#ahm)} .ed--plain{fill:none;stroke:var(--line-strong);stroke-width:1.5} .ed--forbid{fill:none;stroke:var(--mark);stroke-width:1.5;stroke-dasharray:6 5;marker-end:url(#ahm)} .ah{fill:var(--line-strong)} .ahm{fill:var(--mark)} .zone{fill:var(--ink);opacity:.045} .gate{stroke:var(--lock);stroke-width:2;stroke-dasharray:7 6} .xm{stroke:var(--mark);stroke-width:3;stroke-linecap:round} .plot{stroke:var(--ink);stroke-width:2;fill:none} .plot--drift{stroke:var(--mark);stroke-width:2;fill:none;stroke-dasharray:7 5} .plot--bar{stroke:var(--lock);stroke-width:2;fill:none;stroke-dasharray:7 5} .axis{stroke:var(--line);stroke-width:1.25} .dot{fill:var(--lock)} </style><defs><marker id="ah" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" class="ah"/></marker><marker id="ahm" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" class="ahm"/></marker></defs><rect width="1080" height="480" fill="var(--paper)"/>
+
+          <rect class="zone" x="20" y="60" width="460" height="290" rx="8"></rect>
+          <line class="gate" x1="480" y1="60" x2="480" y2="400"></line>
+          <text class="lab lab--lock" x="480" y="44" text-anchor="middle">THE COMMIT LINE</text>
+          <text class="s" x="250" y="374" text-anchor="middle">all of this is written down and committed first</text>
+
+          <rect class="bx bx--mark" x="30" y="170" width="170" height="70" rx="5"></rect>
+          <text class="t" x="115" y="196" text-anchor="middle">AN OBJECTION</text>
+          <text class="s" x="115" y="214" text-anchor="middle">the panel names</text>
+          <text class="s" x="115" y="229" text-anchor="middle">something to test</text>
+
+          <rect class="bx" x="240" y="140" width="220" height="140" rx="5"></rect>
+          <text class="t" x="350" y="166" text-anchor="middle">THE LEDGER ENTRY</text>
+          <text class="s" x="256" y="190">· what the check is</text>
+          <text class="s" x="256" y="209">· which objection it answers</text>
+          <text class="s" x="256" y="228">· the exact specification</text>
+          <text class="s s--mark" x="256" y="252">· what would count as FAILING</text>
+
+          <line class="ed" x1="202" y1="205" x2="236" y2="205"></line>
+          <line class="ed" x1="462" y1="210" x2="516" y2="210"></line>
+
+          <rect class="bx" x="520" y="175" width="160" height="70" rx="5"></rect>
+          <text class="t" x="600" y="203" text-anchor="middle">RUN IT</text>
+          <text class="s" x="600" y="222" text-anchor="middle">now, and not before</text>
+
+          <rect class="bx" x="730" y="120" width="150" height="56" rx="5"></rect>
+          <text class="t" x="805" y="153" text-anchor="middle">IT PASSES</text>
+          <rect class="bx" x="730" y="244" width="150" height="56" rx="5"></rect>
+          <text class="t" x="805" y="277" text-anchor="middle">IT FAILS</text>
+
+          <path class="ed" d="M680 200 C705 200, 705 148, 726 148"></path>
+          <path class="ed" d="M680 220 C705 220, 705 272, 726 272"></path>
+
+          <rect class="bx bx--lock" x="930" y="158" width="130" height="100" rx="5"></rect>
+          <text class="t" x="995" y="192" text-anchor="middle">REPORTED</text>
+          <text class="s" x="995" y="212" text-anchor="middle">in the paper,</text>
+          <text class="s" x="995" y="227" text-anchor="middle">either way</text>
+
+          <path class="ed" d="M880 148 C905 148, 905 195, 926 195"></path>
+          <path class="ed" d="M880 272 C905 272, 905 220, 926 220"></path>
+
+          <path class="ed--forbid" d="M790 302 C730 375, 545 375, 464 288"></path>
+          <circle cx="627" cy="362" r="17" fill="var(--surface)"></circle>
+          <line class="xm" x1="616" y1="351" x2="638" y2="373"></line>
+          <line class="xm" x1="638" y1="351" x2="616" y2="373"></line>
+          <text class="s s--mark" x="627" y="404" text-anchor="middle">trying variants until one passes</text>
+          <text class="s" x="627" y="420" text-anchor="middle">would have to cross the commit line backwards</text>
+
+          <rect class="bx" x="60" y="400" width="280" height="58" rx="5"></rect>
+          <text class="t t--sm" x="200" y="424" text-anchor="middle">THE SPEC-SEARCH AUDITOR</text>
+          <text class="s" x="200" y="442" text-anchor="middle">reads the ledger, never the paper</text>
+          <path class="ed" d="M210 400 C210 340, 340 320, 348 284"></path>
+        </svg>
