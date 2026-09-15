@@ -3,25 +3,30 @@
 
           <text class="lab" x="30" y="22">SETUP · RUNS ONCE, BEFORE ANY LOOPING</text>
 
-          <rect class="bx" x="30" y="36" width="248" height="56" rx="5"></rect>
-          <text class="t t--sm" x="44" y="60">1 · Pick the bar</text>
-          <text class="s" x="44" y="78">a real paper published in that journal</text>
+          <rect class="bx" x="30" y="36" width="196" height="56" rx="5"></rect>
+          <text class="t t--sm" x="44" y="60">1 · Who does the work</text>
+          <text class="s" x="44" y="78">you, the loop, or both</text>
 
-          <rect class="bx bx--lock" x="298" y="36" width="248" height="56" rx="5"></rect>
-          <text class="t t--sm" x="312" y="60">2 · Freeze the core</text>
-          <text class="s" x="312" y="78">the analysis and the claims</text>
+          <rect class="bx" x="245" y="36" width="196" height="56" rx="5"></rect>
+          <text class="t t--sm" x="259" y="60">2 · Pick the bar</text>
+          <text class="s" x="259" y="78">published in that journal</text>
 
-          <rect class="bx bx--lock" x="566" y="36" width="248" height="56" rx="5"></rect>
-          <text class="t t--sm" x="580" y="60">3 · Open the two logs</text>
-          <text class="s" x="580" y="78">the ledger and the changelog</text>
+          <rect class="bx bx--lock" x="460" y="36" width="196" height="56" rx="5"></rect>
+          <text class="t t--sm" x="474" y="60">3 · Freeze the core</text>
+          <text class="s" x="474" y="78">the analysis and the claims</text>
 
-          <rect class="bx" x="834" y="36" width="248" height="56" rx="5"></rect>
-          <text class="t t--sm" x="848" y="60">4 · Check the code runs</text>
-          <text class="s" x="848" y="78">every number traces to output</text>
+          <rect class="bx bx--lock" x="675" y="36" width="196" height="56" rx="5"></rect>
+          <text class="t t--sm" x="689" y="60">4 · Open the logs</text>
+          <text class="s" x="689" y="78">the ledger and the changelog</text>
 
-          <line class="ed" x1="281" y1="64" x2="295" y2="64"></line>
-          <line class="ed" x1="549" y1="64" x2="563" y2="64"></line>
-          <line class="ed" x1="817" y1="64" x2="831" y2="64"></line>
+          <rect class="bx" x="890" y="36" width="196" height="56" rx="5"></rect>
+          <text class="t t--sm" x="904" y="60">5 · Check the code runs</text>
+          <text class="s" x="904" y="78">every number traces to output</text>
+
+          <line class="ed" x1="229" y1="64" x2="242" y2="64"></line>
+          <line class="ed" x1="444" y1="64" x2="457" y2="64"></line>
+          <line class="ed" x1="659" y1="64" x2="672" y2="64"></line>
+          <line class="ed" x1="874" y1="64" x2="887" y2="64"></line>
 
           <text class="lab" x="30" y="132">THE LOOP · EACH TRACK RUNS UNTIL IT HITS ITS OWN EXIT</text>
 
@@ -48,9 +53,9 @@
           <text class="lab lab--ink" x="346" y="176">EVERY TRACK RUNS THIS CYCLE</text>
 
           <rect class="bx" x="370" y="200" width="200" height="70" rx="5"></rect>
-          <text class="t" x="470" y="224" text-anchor="middle">BUILDER</text>
-          <text class="s" x="470" y="242" text-anchor="middle">revises this track,</text>
-          <text class="s" x="470" y="257" text-anchor="middle">may add robustness checks</text>
+          <text class="t" x="470" y="224" text-anchor="middle">THE REVISION</text>
+          <text class="s" x="470" y="242" text-anchor="middle">you or the loop, by track;</text>
+          <text class="s" x="470" y="257" text-anchor="middle">either may add robustness checks</text>
 
           <rect class="bx" x="370" y="320" width="200" height="50" rx="5"></rect>
           <text class="t" x="470" y="340" text-anchor="middle">LABELS STRIPPED</text>

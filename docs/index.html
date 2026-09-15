@@ -226,6 +226,7 @@
 
   <div class="col">
     <p>What you get back is a revised draft, a list of every change that touched a claim, and a list of the objections it could not answer. That last list is what your actual referees are going to say.</p>
+    <p>You decide how much of the revising it does. It can do all of it while you are asleep, it can hand you each objection and wait, or it can never touch your prose at all and just tell you what is wrong with it.</p>
   </div>
 
   <hr class="rule">
@@ -237,6 +238,7 @@
       <p><strong>The loop cannot touch your results.</strong> Before it starts you write your headline specification into a file it is forbidden to edit: estimator, sample, dependent variable, treatment, fixed effects, clustering. That stays frozen for the whole run. The loop revises how the paper argues, explains and presents. It does not go looking for a better result.</p>
       <p>It <em>can</em> run robustness checks, and that is where the real danger sits. If a referee says the effect is not robust, the easy way to make the complaint go away is to hunt for a specification where it holds. So every check gets written down before it runs, including what result would count as failing, and every check that gets written down appears in the paper whether it passed or not. Nothing is quietly dropped. A separate auditor reads that log and asks one question: does this look like someone trying to break their result, or someone shopping for one that survives?</p>
       <p>My honest view is that this is more disciplined than how most of us work by hand. You run a check in Stata at eleven at night, it comes out badly, you try a different one, and nothing anywhere records that. Here it does.</p>
+      <p>And if what bothers you is having a model write your sentences rather than having it near your data, there is a setting where it never touches the manuscript. It referees, it objects, it audits the log, and every word of the revision is yours. Same bar, same panel, same rules.</p>
       <p>You should still disclose it. Most journals now have a policy on AI assistance. Follow it, and say plainly that the analyses and the reported specification were fixed in advance and are unchanged.</p>
     </div>
   </section>
@@ -251,7 +253,7 @@
     </div>
     <figure>
       <div class="scroller">
-        <svg viewBox="0 0 1120 530" role="img" aria-label="Process diagram. Four setup steps run once: pick the bar, freeze the analysis and the claims, open the ledger and the changelog, check the code runs. The manuscript is then split into seven objection tracks, and each track runs a cycle: a builder revises the track, labels are stripped from both it and the bar paper, a referee panel of two models at two orderings picks one, and the objection goes back to the builder until the track exits.">
+        <svg viewBox="0 0 1120 530" role="img" aria-label="Process diagram. Five setup steps run once: decide who does the work, pick the bar, freeze the analysis and the claims, open the logs, check the code runs. The manuscript is then split into seven objection tracks, and each track runs a cycle: you or the loop revises the track, labels are stripped from both it and the bar paper, a referee panel of two models at two orderings picks one, and the objection goes back for another revision until the track exits.">
           <defs>
             <marker id="ah" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" class="ah"></path></marker>
             <marker id="ahm" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" class="ahm"></path></marker>
@@ -259,25 +261,30 @@
 
           <text class="lab" x="30" y="22">SETUP · RUNS ONCE, BEFORE ANY LOOPING</text>
 
-          <rect class="bx" x="30" y="36" width="248" height="56" rx="5"></rect>
-          <text class="t t--sm" x="44" y="60">1 · Pick the bar</text>
-          <text class="s" x="44" y="78">a real paper published in that journal</text>
+          <rect class="bx" x="30" y="36" width="196" height="56" rx="5"></rect>
+          <text class="t t--sm" x="44" y="60">1 · Who does the work</text>
+          <text class="s" x="44" y="78">you, the loop, or both</text>
 
-          <rect class="bx bx--lock" x="298" y="36" width="248" height="56" rx="5"></rect>
-          <text class="t t--sm" x="312" y="60">2 · Freeze the core</text>
-          <text class="s" x="312" y="78">the analysis and the claims</text>
+          <rect class="bx" x="245" y="36" width="196" height="56" rx="5"></rect>
+          <text class="t t--sm" x="259" y="60">2 · Pick the bar</text>
+          <text class="s" x="259" y="78">published in that journal</text>
 
-          <rect class="bx bx--lock" x="566" y="36" width="248" height="56" rx="5"></rect>
-          <text class="t t--sm" x="580" y="60">3 · Open the two logs</text>
-          <text class="s" x="580" y="78">the ledger and the changelog</text>
+          <rect class="bx bx--lock" x="460" y="36" width="196" height="56" rx="5"></rect>
+          <text class="t t--sm" x="474" y="60">3 · Freeze the core</text>
+          <text class="s" x="474" y="78">the analysis and the claims</text>
 
-          <rect class="bx" x="834" y="36" width="248" height="56" rx="5"></rect>
-          <text class="t t--sm" x="848" y="60">4 · Check the code runs</text>
-          <text class="s" x="848" y="78">every number traces to output</text>
+          <rect class="bx bx--lock" x="675" y="36" width="196" height="56" rx="5"></rect>
+          <text class="t t--sm" x="689" y="60">4 · Open the logs</text>
+          <text class="s" x="689" y="78">the ledger and the changelog</text>
 
-          <line class="ed" x1="281" y1="64" x2="295" y2="64"></line>
-          <line class="ed" x1="549" y1="64" x2="563" y2="64"></line>
-          <line class="ed" x1="817" y1="64" x2="831" y2="64"></line>
+          <rect class="bx" x="890" y="36" width="196" height="56" rx="5"></rect>
+          <text class="t t--sm" x="904" y="60">5 · Check the code runs</text>
+          <text class="s" x="904" y="78">every number traces to output</text>
+
+          <line class="ed" x1="229" y1="64" x2="242" y2="64"></line>
+          <line class="ed" x1="444" y1="64" x2="457" y2="64"></line>
+          <line class="ed" x1="659" y1="64" x2="672" y2="64"></line>
+          <line class="ed" x1="874" y1="64" x2="887" y2="64"></line>
 
           <text class="lab" x="30" y="132">THE LOOP · EACH TRACK RUNS UNTIL IT HITS ITS OWN EXIT</text>
 
@@ -304,9 +311,9 @@
           <text class="lab lab--ink" x="346" y="176">EVERY TRACK RUNS THIS CYCLE</text>
 
           <rect class="bx" x="370" y="200" width="200" height="70" rx="5"></rect>
-          <text class="t" x="470" y="224" text-anchor="middle">BUILDER</text>
-          <text class="s" x="470" y="242" text-anchor="middle">revises this track,</text>
-          <text class="s" x="470" y="257" text-anchor="middle">may add robustness checks</text>
+          <text class="t" x="470" y="224" text-anchor="middle">THE REVISION</text>
+          <text class="s" x="470" y="242" text-anchor="middle">you or the loop, by track;</text>
+          <text class="s" x="470" y="257" text-anchor="middle">either may add robustness checks</text>
 
           <rect class="bx" x="370" y="320" width="200" height="50" rx="5"></rect>
           <text class="t" x="470" y="340" text-anchor="middle">LABELS STRIPPED</text>
@@ -463,13 +470,55 @@
 
   <section>
     <div class="sec-head">
-      <h2>It never interrupts you</h2>
-      <p>A run that stops to ask permission every time it touches a sentence is a run nobody finishes. Ask an author forty times and you get forty approvals and no reading. So it does not ask. It keeps a record instead, and it follows three rules that make the decisions it takes on your behalf safe ones.</p>
+      <h2>Who does the work</h2>
+      <p>One setting, chosen before the run starts. It moves who holds the pen and nothing else. The bar, the frozen specification, the log, the referees and the stopping rules are identical in all three, and none of them is the easy option.</p>
+    </div>
+    <div class="cards">
+      <div class="card">
+        <h3>Hands off</h3>
+        <p>It revises everything and never asks. You read the handoff brief at the end. For a deadline, and for a paper whose prose you are not precious about.</p>
+      </div>
+      <div class="card">
+        <h3>Split</h3>
+        <p>Every objection becomes a task with an owner. You decide which of the seven pieces are yours and which are its. Yours wait in a queue and it works the rest meanwhile. Most people, most of the time.</p>
+      </div>
+      <div class="card">
+        <h3>Referee only</h3>
+        <p>It never writes a word of your paper. It referees, names the objections, keeps the log honest, and hands you all of it. For anyone who would rather not have a model in their prose, and has the evenings.</p>
+      </div>
+    </div>
+    <div class="tbl-wrap">
+      <table class="tbl">
+        <thead><tr><th scope="col">Piece</th><th scope="col">A starting point, if you split it</th></tr></thead>
+        <tbody>
+          <tr><td>Contribution</td><td><strong>You.</strong> Nobody can write your contribution claim but you. It is the one thing in the paper you know and the model does not.</td></tr>
+          <tr><td>Theory, identification, measurement</td><td><strong>Ask me.</strong> Sometimes the objection is that a paragraph is unclear, and sometimes it is that your mechanism has no actors in it. They arrive looking the same, and only one of them is the machine's to fix.</td></tr>
+          <tr><td>Alternative explanations</td><td><strong>It.</strong> It is good at generating these, and you have stopped being able to see them, which is what four years on one paper does.</td></tr>
+          <tr><td>Inference and power</td><td><strong>It</strong>, under the log, which is what makes this one safe to hand over.</td></tr>
+          <tr><td>Presentation</td><td><strong>It.</strong> This is the one it is straightforwardly better at than you are at eleven at night.</td></tr>
+          <tr><td>And the queue</td><td>A piece routed to you that you never get to is a piece that never finished. It will say so rather than round it up.</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="col">
+      <p><strong>Why per piece and not per task.</strong> Because the forty-approvals problem applies to you as much as to it. Deciding once, while you are thinking about the paper rather than about a queue, is a better decision than the fortieth one you make at speed. Set two pieces to ask you, not seven.</p>
+      <p><strong>A piece waiting on you parks and the other six keep going.</strong> That is what splitting the paper seven ways buys. When everything is either finished or waiting on you, it says so once and stops. It does not nag.</p>
+      <p><strong>Your own edits go into the log too</strong>, classified exactly the way its are. This is not bookkeeping for its own sake. The check on whether the paper still says what you meant is a diff against what you wrote down at the start, and it does not care who moved the claim. You will drift your own paper. That is most of what a fourth revision is.</p>
+      <p><strong>Where this one goes wrong</strong> is routing five pieces to yourself on a Sunday. Come Monday you are revising the paper alone again, only now with a dashboard watching you not do it. Take what you will actually sit down and do this week.</p>
+    </div>
+  </section>
+
+  <hr class="rule">
+
+  <section>
+    <div class="sec-head">
+      <h2>Either way, it keeps a record</h2>
+      <p>A run that stops to ask permission every time it touches a sentence is a run nobody finishes. Ask an author forty times and you get forty approvals and no reading. So on hands off it never asks, and on split it asks only where you told it to. The rest of the time it keeps a record instead, and it follows three rules that make the decisions it takes on your behalf safe ones.</p>
     </div>
     <div class="cards">
       <div class="card">
         <h3>It can weaken a claim, never strengthen one</h3>
-        <p>Where a revision would change what the paper asserts, it takes the more cautious version. &ldquo;Is consistent with&rdquo; never becomes &ldquo;shows&rdquo;. A failed robustness check narrows your claim to where it holds rather than disappearing. Walking a claim back needs no permission from you. Pushing one further would.</p>
+        <p>Where a revision would change what the paper asserts, it takes the more cautious version. &ldquo;Is consistent with&rdquo; never becomes &ldquo;shows&rdquo;. A failed robustness check narrows your claim to where it holds rather than disappearing. Walking a claim back needs no permission from you. Pushing one further would. The rule binds it and not you: strengthen your own claim if you think it is right, and the log will say it was your call.</p>
       </div>
       <div class="card">
         <h3>Your sentences are never deleted silently</h3>
@@ -477,11 +526,11 @@
       </div>
       <div class="card">
         <h3>New citations are flagged until you read them</h3>
-        <p>Every reference it adds is marked <code>[UNVERIFIED]</code> in the draft and stays that way until you confirm you have read the work. You are accountable for every reference in your paper. This is the most likely way the whole approach embarrasses somebody.</p>
+        <p>Every reference it adds is marked <code>[UNVERIFIED]</code> in the draft and stays that way until you confirm you have read the work. You are accountable for every reference in your paper. This is the most likely way the whole approach embarrasses somebody. Approving the task does not clear the flag: saying yes to a citation is not the same act as reading one.</p>
       </div>
     </div>
     <div class="col">
-      <p>Anywhere it changes what the paper claims, it leaves a flag at that spot in the document. <strong>The paper is not submittable while any flag is still there.</strong> Clearing them is the work you have to do, and it is proportional to how much actually changed.</p>
+      <p>Anywhere it changes what the paper claims, it leaves a flag at that spot in the document. <strong>The paper is not submittable while any flag is still there.</strong> Clearing them is the work you have to do, and it is proportional to how much actually changed. On hands off they pile up and you work through them at the end. On split they clear as you go, which is the real reason to use split: signing off on a choice you remember making is easier than reconstructing one you were not there for.</p>
       <p>At the end you get a handoff brief. What the paper claims now, against what you wrote down at the start. Then the changes that moved it furthest, the open flags, every robustness check that failed and how it narrowed things, and whatever the referees were still objecting to when they ran dry.</p>
       <p>That last list is the one to read twice.</p>
     </div>
@@ -492,7 +541,7 @@
   <section>
     <div class="sec-head">
       <h2>What you actually do</h2>
-      <p>Five steps. Most of your time goes into step two, and it takes about twenty minutes.</p>
+      <p>Six steps. Most of your time goes into step two, and it takes about twenty minutes.</p>
     </div>
     <div class="tbl-wrap">
       <table class="tbl">
@@ -500,9 +549,10 @@
         <tbody>
           <tr><td>1 · Get your files together</td><td>The manuscript and the replication code in one folder. The code has to run from the raw data, because the loop checks that before it starts and every number in every table gets traced back to output.</td></tr>
           <tr><td>2 · Write two short files</td><td>Your headline specification, and what your paper claims, in your own words. The second one matters more than it sounds: it is the reference that catches the draft drifting away from what you meant. If the AI writes it for you, it drifts along with the draft and catches nothing.</td></tr>
-          <tr><td>3 · Pick the bar</td><td>You get two or three suggested papers from your target journal. Pick the one you would least like to be compared against.</td></tr>
-          <tr><td>4 · Start it and leave</td><td>It does not need you. It will not ask.</td></tr>
-          <tr><td>5 · Read the handoff brief</td><td>Clear the flags, decide what to keep, decide what to revert.</td></tr>
+          <tr><td>3 · Say who does the work</td><td>Hands off, split, or referee only. If you split it, which of the seven pieces are yours.</td></tr>
+          <tr><td>4 · Pick the bar</td><td>You get two or three suggested papers from your target journal. Pick the one you would least like to be compared against.</td></tr>
+          <tr><td>5 · Start it</td><td>On hands off you can leave. It does not need you and it will not ask. On the other two, check the dashboard when you have an evening.</td></tr>
+          <tr><td>6 · Read the handoff brief</td><td>Clear the flags, decide what to keep, decide what to revert.</td></tr>
         </tbody>
       </table>
     </div>
@@ -522,7 +572,7 @@
           <tr><td>Writing, tables, figures</td><td>When your version beats the published paper four times out of four. This one is genuinely winnable. You can out-present a paper that is already in print.</td></tr>
           <tr><td>Contribution</td><td>It will never beat a published paper's contribution, which took somebody three years. It finishes when two rounds go by without a <em>new</em> objection.</td></tr>
           <tr><td>Identification, measurement</td><td>Same rule, with a floor. An objection your design genuinely cannot answer belongs in your limitations section rather than in another round of revision.</td></tr>
-          <tr><td>All of them</td><td>Nothing finishes while your code fails to run, a table disagrees with the code, or a declared robustness check is missing from the paper.</td></tr>
+          <tr><td>All of them</td><td>Nothing finishes while your code fails to run, a table disagrees with the code, a declared robustness check is missing from the paper, or a task is still sitting in your queue.</td></tr>
           <tr><td>And then you</td><td>&ldquo;Everything has finished&rdquo; means the loop has nothing left to do. The loop reaches <em>done</em>. Only you reach <em>ready</em>.</td></tr>
         </tbody>
       </table>
@@ -558,7 +608,7 @@
 
   <footer>
     <p>The gauntlet loop technique is <a href="https://github.com/mshumer">Matt Shumer's</a>, from the original prompt he wrote for <a href="https://github.com/mshumer/Claude-of-Duty">Claude of Duty</a>. This adapts <a href="https://github.com/robonuggets/gauntlet-loop">gauntlet-loop</a> by Jay E at RoboNuggets, which packaged that technique as a reusable skill.</p>
-    <p>Modified for empirical social science: reviewer models moved from bar to critic, splitting by referee objection, the frozen specification and the robustness log, change tracking that never interrupts, and a blinding protocol for the training-data problem. CC BY 4.0.</p>
+    <p>Modified for empirical social science: reviewer models moved from bar to critic, splitting by referee objection, the frozen specification and the robustness log, change tracking that interrupts only where you ask it to, a choice of who does the revising, and a blinding protocol for the training-data problem. CC BY 4.0.</p>
   </footer>
 
 </div>
