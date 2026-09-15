@@ -40,6 +40,34 @@ A starting point. Change it to suit the paper — these are defaults, not findin
 | Inference and power | `loop` | Under the ledger, which is what makes this safe to delegate. |
 | Presentation | `loop` | This is the one it is straightforwardly better at than you are at eleven at night. |
 
+### The file
+
+Short enough to read in one go, which is the point. This is the whole of it:
+
+```markdown
+# Who does the work
+
+mode: split
+
+| Track | Routed to |
+|---|---|
+| Contribution | author |
+| Theory and mechanism | ask |
+| Identification | ask |
+| Measurement | loop |
+| Alternative explanations | loop |
+| Inference and power | loop |
+| Presentation | loop |
+
+r12: measurement moved from ask to loop. Every objection it raised was
+about the appendix table rather than about the construct, and I was
+answering "you do it" without reading.
+```
+
+On hands off and referee only there is no table. The mode line is the file.
+
+The note at the bottom is where mid-run changes go, newest last, with the reason. Routing is the one setup file that is *meant* to change during a run, so it carries its own history rather than being silently overwritten.
+
 ### Why the routing is per track and not per task
 
 Because the skill's own argument applies to you. An author asked forty times approves forty times without reading, and a per-task prompt on all seven tracks is how you get there. Deciding once, before the run, while you are thinking about the paper rather than about the queue, is a better decision than the fortieth one you make at speed.
@@ -152,4 +180,6 @@ One sentence is the same in all three and is the one that matters most: **the an
 
 Routing is a file, not a vow. Edit `ROUTING.md` between rounds and the loop picks it up on the next one. Moving a track from `author` to `loop` releases its parked tasks to the builder; moving one the other way lets the loop finish the task in flight and then parks.
 
-Log the change in the changelog like any other consequential decision. A reader of the run later will want to know which parts of the paper were revised under which setting. So will you, in six months, when a referee asks how a paragraph got there.
+It goes in two places, and both earn their keep. A dated line at the bottom of `ROUTING.md` with the reason, so the file explains itself to anyone who opens it cold. And an entry in the changelog, like any other consequential decision, so the run record is complete.
+
+A reader of the run later will want to know which parts of the paper were revised under which setting. So will you, in six months, when a referee asks how a paragraph got there.
