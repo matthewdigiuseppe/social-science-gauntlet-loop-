@@ -4,10 +4,12 @@ The loop is allowed to run robustness checks. The ledger is what keeps that from
 
 The logic is simple: a robustness check is only evidence if it could have come out badly and you would have reported it anyway. Declaring the check before running it, and reporting it after, is what makes that true. Everything below is machinery for enforcing those two facts.
 
+**The ledger does not care who runs the check.** On the settings where the author runs their own checks, the rules below apply to them unchanged, and the auditor reads their entries the same way. An author who declares the check afterwards has done the thing this file exists to prevent, and has the further disadvantage of knowing they did.
+
 ## Rules
 
 1. **Append-only.** Entries are never edited after their result is filled in, and never deleted. If an entry is wrong, add a correcting entry below it that references it.
-2. **Declare before running.** Fields 1 through 5 of an entry are written and committed *before* the code runs. Field 6 is filled in after. A builder that writes the whole entry at once has not run a robustness check.
+2. **Declare before running.** Fields 1 through 5 of an entry are written and committed *before* the code runs. Field 6 is filled in after. Anyone who writes the whole entry at once has not run a robustness check.
 3. **The failure criterion is written in advance.** "What result would make me say this check failed" is field 5, and it is written before the result exists. This field is the load-bearing one — it is what the auditor reads to detect after-the-fact declarations.
 4. **Every declared check is reported.** In the paper or the appendix, with its actual result. A declared check that appears nowhere in the manuscript is a hard gate failure and blocks the loop from exiting.
 5. **One preferred variant per family.** Declare the form of the check you would defend to a referee, then run it. Running further variants is allowed, but each one is its own ledger entry with its own result. The count of variants tried is visible by construction.

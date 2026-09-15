@@ -24,7 +24,9 @@ Two referees per comparison, from different model families. Cross-vendor is the 
 
 If only one family is reachable in your setup, run two referees from that family with deliberately different prompts (one methodologist, one area specialist), note the limitation in the run log, and lean on dry-up rather than blind wins as the exit.
 
-Each referee gets fresh context every round. It never sees prior rounds, prior verdicts, the ledger, or any indication of how much work has gone in. A referee that knows the builder is on round eleven starts being kind.
+Each referee gets fresh context every round. It never sees prior rounds, prior verdicts, the ledger, or any indication of how much work has gone in. A referee that knows the reviser is on round eleven starts being kind.
+
+It also never learns who did the revising. A referee told that a human wrote this section grades it differently, and so does one told a model did. On split that means the prompt is identical on a track the author revised and one the loop revised, and nothing in the submitted text says which is which.
 
 ## Order and repetition
 
@@ -39,7 +41,7 @@ Position bias is large and consistent in LLM judges. Every comparison runs four 
 
 A win is four wins. Three out of four is not a win; it is a coin flip with one referee showing position bias. Log all four verdicts, not the tally.
 
-Disagreement between the two models is itself the finding. When Model A picks ours and Model B picks the bar, the contested thing they name is almost always the paper's actual weak point. Route it straight to the builder.
+Disagreement between the two models is itself the finding. When Model A picks ours and Model B picks the bar, the contested thing they name is almost always the paper's actual weak point. Route it straight to whoever revises that track.
 
 ## The referee prompt
 
@@ -68,6 +70,22 @@ strong, you have not found the objection yet.
 ```
 
 Swap A and B between runs. Item 3 uses whichever manuscript is ours in that run — track which is which outside the prompt, never inside it.
+
+## When the objection goes to a person
+
+Item 2 gives you the objection, which is all a builder needs — it can read the manuscript and work out what would answer it. It is not enough for an author reading a queue on a Tuesday evening, who has to know what the work is before deciding whether tonight is when they do it.
+
+So on a track routed to the author, and only there, add a fourth item:
+
+```
+4. What would answer this objection? Name the shortest version that would
+   actually satisfy you — an analysis, a paragraph, a citation, a
+   restructure — and say which of those it is. Do not write it.
+```
+
+"Do not write it" is the load-bearing half. A referee that drafts the fix has stopped being a referee, and next round it will meet its own prose and think well of it.
+
+Leave item 4 out on tracks the loop revises. A builder should work out the answer from the objection, the way an author does, and a referee that has already named the fix narrows what the builder will consider to the first thing the referee thought of.
 
 ## Objection library
 
